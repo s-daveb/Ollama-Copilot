@@ -123,7 +123,7 @@ function M.setup(user_config)
             end
         end
         return function()
-            print('No original tab behavior found')
+            vim.api.nvim_put({ "\t" }, "c", true, true)
         end
     end
 
